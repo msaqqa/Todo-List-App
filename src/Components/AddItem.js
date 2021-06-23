@@ -8,7 +8,7 @@ class AddItem extends Component{
 
   handleChange = (e) => {
     this.setState({
-      [e.target.id]: [e.target.value]
+      [e.target.id]: e.target.value
     })
   }
 
@@ -18,6 +18,7 @@ class AddItem extends Component{
       return false;
     }else{
       this.props.AddItem(this.state)
+      // e.currentTarget.reset();
       this.setState({
         name: '',
         age: ''

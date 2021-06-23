@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ToDoItems = (props) => {
+const ItemsList = (props) => {
     const {items, handleDelete} = props;
     const length = items.length;
     const theItems = length? (
@@ -16,7 +16,7 @@ const ToDoItems = (props) => {
     ) : (<p className="pargraph">No Items To Show</p>)
     
     return(
-        <div className="list">
+        <div className="ItemsList">
             <span className="name title">Name</span>
             <span className="age title">Age</span>
             <span className="action title">Action</span>
@@ -25,4 +25,4 @@ const ToDoItems = (props) => {
     )
 }
 
-export default ToDoItems;
+export default ItemsList;
