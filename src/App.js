@@ -31,7 +31,7 @@ class App extends Component{
   render(){
     return(
       <div className="container">
-        <h1 className="heading">Todo List</h1>
+        <h1 className="heading">TodoList</h1>
         <ItemsList items={this.state.items} handleDelete={this.handleDelete} />
         <AddItem AddItem={this.AddItem} />
       </div>
